@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Html5 Media Player</title>
+</head>
+<body>
+
+	<h1>Html5 Media Player</h1>
+
+	<article>
+	
+		<section>
+		<audio autoplay loop>
+		<source src="medias/Georgia.ogg" />
+		<source src="medias/Georgia.mp3" />
+		Votre navigateur ne supporte pas les fichiers audios.
+	</audio>
+		</section>
+		
+		<section>
+			<video id=vid>
+			<source src="medias/Cavernae_Terragen2.mp4"/>
+			<source src="Cavernae_Terragen2.theora.ogv"/>
+			<source src="medias/Cavernae_Terragen2.webm"/>
+			Votre navigateur ne supporte pas les fichiers vidéos.
+		</video> <br />
+		
+		
+		<input type="button" id="btPlay"
+		value="Play" onclick="play()" />
+		
+		<input type="button" id="btVideoControls"
+		value="Afficher contrôles vidéo" onclick="toggleControlsVideo()" />
+		
+		</section>	
+		
+		<aside id="timeVideo">
+			
+		</aside>
+		
+	</<article>
+	
+	
+	<script type="text/javascript" src="controls.js"></script>
+</body>
+</html>
